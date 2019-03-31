@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Profile_Fragment extends Fragment implements MainView {
+public class Profile_Fragment extends Fragment {
     List<TempatModel> tempatModels = new ArrayList<>();
     TempatAdapter adapter;
 
@@ -34,7 +34,7 @@ public class Profile_Fragment extends Fragment implements MainView {
         return view;
     }
 
-    @Override
+   /* @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rv2);
@@ -50,5 +50,5 @@ public class Profile_Fragment extends Fragment implements MainView {
         this.tempatModels.clear();
         this.tempatModels.addAll(tempatModels);
         this.adapter.notifyDataSetChanged();
-    }
+    }*/
 }
