@@ -1,4 +1,6 @@
-package com.example.recyclerviewlogin;
+package com.example.recyclerviewlogin.View;
+
+import com.example.recyclerviewlogin.Model.TempatModel;
 
 import java.util.List;
 

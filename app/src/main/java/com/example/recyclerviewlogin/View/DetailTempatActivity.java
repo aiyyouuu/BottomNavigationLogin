@@ -1,9 +1,11 @@
-package com.example.recyclerviewlogin;
+package com.example.recyclerviewlogin.View;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.recyclerviewlogin.R;
 
 public class DetailTempatActivity extends AppCompatActivity {
     TextView tvName,tvOverview;

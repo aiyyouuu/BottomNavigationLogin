@@ -1,28 +1,33 @@
-package com.example.recyclerviewlogin;
+package com.example.recyclerviewlogin.View;
 
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
+import com.example.recyclerviewlogin.Adapter.TempatAdapter;
+import com.example.recyclerviewlogin.Model.TempatModel;
+import com.example.recyclerviewlogin.Presenter.TempatPresenter;
+import com.example.recyclerviewlogin.R;
+import com.example.recyclerviewlogin.View.MainView;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Profile_Fragment extends Fragment {
+public class Wisata_Fragment extends Fragment implements MainView {
     List<TempatModel> tempatModels = new ArrayList<>();
     TempatAdapter adapter;
 
-    public Profile_Fragment() {
+    public Wisata_Fragment() {
         // Required empty public constructor
     }
 
@@ -30,25 +35,25 @@ public class Profile_Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_wisata, container, false );
         return view;
     }
-
-   /* @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    @Override
+    public void onViewCreated(@NonNull View view, @NonNull Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rv2);
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rv1);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
         adapter = new TempatAdapter(getContext(), tempatModels);
         recyclerView.setAdapter(adapter);
-        TempatPresenter data = new TempatPresenter(this,getContext());
+        TempatPresenter data = new TempatPresenter(this, getContext());
         data.setData();
     }
-
-    @Override
-    public void onSuccess(List<TempatModel> tempatModels) {
+    public void onSuccess (List<TempatModel> tempatModels){
         this.tempatModels.clear();
         this.tempatModels.addAll(tempatModels);
         this.adapter.notifyDataSetChanged();
-    }*/
+    }
+
+
 }

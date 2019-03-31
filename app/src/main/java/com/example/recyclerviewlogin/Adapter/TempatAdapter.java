@@ -1,4 +1,4 @@
-package com.example.recyclerviewlogin;
+package com.example.recyclerviewlogin.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.recyclerviewlogin.View.DetailTempatActivity;
+import com.example.recyclerviewlogin.R;
+import com.example.recyclerviewlogin.Model.TempatModel;
 
 import java.util.ArrayList;
 import java.util.List;

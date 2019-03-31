@@ -1,6 +1,11 @@
-package com.example.recyclerviewlogin;
+package com.example.recyclerviewlogin.Presenter;
 
 import android.content.Context;
+
+import com.example.recyclerviewlogin.View.MainView;
+import com.example.recyclerviewlogin.Model.TempatModel;
+import com.example.recyclerviewlogin.R;
+
 import java.util.ArrayList;
 import java.util.List;
 

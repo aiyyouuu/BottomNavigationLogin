@@ -1,4 +1,4 @@
-package com.example.recyclerviewlogin;
+package com.example.recyclerviewlogin.Model;
 
 public class TempatModel  {
     String namaTempat;
