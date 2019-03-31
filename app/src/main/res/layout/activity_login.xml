@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/org"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/org"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_below="@id/org"
+        android:textSize="35sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="145sp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="Username"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_masuk"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/pass"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="40sp"
+        android:text="MASUK"
+        android:textSize="17sp"
+        android:textColor="@color/design_default_color_primary_dark"/>
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/pass"
+        android:layout_toRightOf="@id/btn_masuk"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="40sp"
+        android:text="DAFTAR"
+        android:textSize="17sp"
+        android:textColor="@color/design_default_color_primary_dark"/>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/wisata"
+        android:icon="@drawable/ic_landscape_black_24dp"
+        android:title="Wisata"
+        android:iconTint="@color/design_default_color_primary_dark"/>
+
+    <item
+        android:id="@+id/profil"
+        android:icon="@drawable/ic_portrait_black_24dp"
+        android:title="Profil"
+        android:iconTint="@color/design_default_color_primary_dark"/>
+</menu>
